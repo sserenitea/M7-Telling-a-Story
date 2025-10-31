@@ -1,4 +1,9 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://drays61pfu7xc"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://drays61pfu7xc"]
+
+[ext_resource type="StyleBox" uid="uid://qcs8vwooi2kr" path="res://lessons/button_black.tres" id="1_ei3wx"]
+[ext_resource type="StyleBox" uid="uid://dhgsk16td4sq7" path="res://lessons/button_gray.tres" id="1_jktrv"]
+[ext_resource type="StyleBox" uid="uid://c3tpiw17a3o1a" path="res://lessons/button_focus.tres" id="2_aaryr"]
+[ext_resource type="StyleBox" uid="uid://bvu63pk3ljqsr" path="res://lessons/button_cyan.tres" id="2_ulena"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4fo1"]
 content_margin_left = 48.0
@@ -13,5 +18,10 @@ corner_radius_bottom_left = 32
 
 [resource]
 default_font_size = 24
+Button/styles/disabled = ExtResource("1_jktrv")
+Button/styles/focus = ExtResource("2_aaryr")
+Button/styles/hover = ExtResource("2_ulena")
+Button/styles/normal = ExtResource("1_ei3wx")
+Button/styles/pressed = ExtResource("2_ulena")
 RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_a4fo1")
