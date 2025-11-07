@@ -45,7 +45,7 @@ texture = ExtResource("5_8k2r0")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Expressions" type="TextureRect" parent="Body"]
+[node name="Expression" type="TextureRect" parent="Body"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -63,10 +63,10 @@ stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 43.0
-offset_top = 45.0
-offset_right = 389.0
-offset_bottom = 177.0
+offset_left = 64.0
+offset_top = 57.0
+offset_right = 442.0
+offset_bottom = 205.0
 metadata/_edit_group_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
