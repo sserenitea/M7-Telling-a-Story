@@ -21,7 +21,7 @@ var expressions := {
 
 func _ready() -> void:
 	body.texture = bodies["pink"]
-	expression.texture = expressions["happy"]
+	expression.texture = expressions["`happy"]
 	
 	button_sophia.pressed.connect(func() -> void:
 		body.texture = bodies["sophia"]
