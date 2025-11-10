@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8o5qo3on08yk"]
+[gd_scene load_steps=11 format=3 uid="uid://b8o5qo3on08yk"]
 
 [ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_5dtme"]
 [ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_v8wjx"]
@@ -14,6 +14,12 @@ shader_parameter/pattern_sampler = ExtResource("2_1cblk")
 shader_parameter/bg_color = Color(0.20392157, 0.5568628, 0.78039217, 1)
 shader_parameter/pattern_color = Color(1, 0.8358228, 0.7077528, 1)
 shader_parameter/pattern_size = 256.0
+
+[sub_resource type="InputEventAction" id="InputEventAction_nggfo"]
+action = &"advance_text"
+
+[sub_resource type="Shortcut" id="Shortcut_rduj4"]
+events = [SubResource("InputEventAction_nggfo")]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -80,6 +86,7 @@ offset_bottom = -428.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 28
+bbcode_enabled = true
 text = "(my non existent cat walked on my keyboard)"
 fit_content = true
 
@@ -97,6 +104,7 @@ offset_right = -12.0
 offset_bottom = -13.0
 grow_horizontal = 0
 grow_vertical = 0
+shortcut = SubResource("Shortcut_rduj4")
 text = "next"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
